@@ -5,28 +5,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Recetario Sofi</title>
 	<style>
-		.prep {
-			color: darkblue;
-			background: greenyellow;
+		body {
+			background-color: #F1C40F;
+			font-family: sans-serif;
+			padding: 50px;
+		}
+
+		h4 {
+			color: #C70039;
+			background: whitesmoke;
 			width: 180px;
 			text-align: center;
-			border: 1px solid darkblue;
+			border: 1px #C70039;
 		}
-		.ingredientes {
-			color: white;
-			background: darkgreen;
-			width: 180px;
-			text-align: center;
-			border: 1px solid darkblue;
-		}
+		
 		div h2 {
-			color: darkblue;
-			background: yellow;
+			color: #800080;
 			width:300px;
 			font-style:oblique;
+			margin-top: 80px;
 		}
-		#indice li {
-			list-style:none;
+		
+		.card {
+			width: 300px;
+			box-sizing: border-box;
+			display: inline-block;
+
+		}
+		.card img {
+			object-fit: cover;
+		}
+		h2 {
+			text-align: center;
+			color: #800080;
+		}
+		h1 {
+			color: #C70039;
+		}
+		.borde div {
+			border-top: 2px solid #C70039;
 		}
 
 	</style>
@@ -34,11 +51,24 @@
 </head>
 <body>
 	<h1>Recetario Sofi</h1>
-	<h2>Indice</h2>
-	<ul id="indice"> 
-		<li><a href="#receta1"> Bizcocho de la Abuela </a></li>
-		<li><a href="#receta2"> Gazpacho de manzana </a></li>
-	</ul>
+	<p> Porque no siempre hay tiempo o ganas para ponerse a cocinar aquí recopilamos para vosotros cientos de recetas fáciles, rápidas y caseras que os ayudarán a seguir comiendo rico y saludable. Con explicaciones detalladas, fotos paso a paso y los mejores trucos, estos platos siempre salen de rechupete. ¡Que la dificultad y el tiempo no sean una excusa! </p>
+	<h2>Recetas fáciles y rápidas</h2>
+	<div> 
+		<a href="#receta1" class="card">
+			<img src="https://1.bp.blogspot.com/--T3xc8A56tI/UelEcdWFFaI/AAAAAAAADcI/dcfT8cQuz50/s1600/DSC03677.JPG" width="250px" height="200px">
+			<span>Bizcocho de la Abuela</span>
+		</a>
+		<a href="#receta2" class="card"> 
+			<img src="https://spanishsabores.com/wp-content/uploads/2023/08/Gazpacho-Featured.jpg" width="250px" height="200px">
+			 <span>Gazpacho de manzana</span>
+		</a>
+		<a href="#receta3" class="card"> 
+			<img src="https://www.recetasderechupete.com/wp-content/uploads/2020/05/Crema-pastelera-6.png" width="250px" height="200px">
+			<span>Crema Pastelera</span>
+		</a>	 
+
+	</div>
+	<div class="borde">
 	<div>
 		<h2 id="receta1"> Bizcocho de la abuela </h2>
 		<p> Disfruta de este delicioso bizcocho en tus desayunos y meriendas. Fácil y rápido de hacer, le encatará a toda la familia. Lo mejor es que también puedes prepararlo junto con los más pequeños y disfrutar de una tarde divertidisima de cocina!!! </p>
@@ -59,7 +89,7 @@
 			<li> Untar con mantequilla un molde apto para horno y verter la mezcla en dicho molde</li>
 			<li> Hornear media hora a 180 grados </li>
 		</ol>
-		<img src="https://cdn.elcocinerocasero.com/imagen/receta/1000/2022-10-10-12-30-30/bizcocho-de-yogur.jpeg" width="200px" height="200px" alt="Bizcocho de la abuela">
+		<img src="https://cdn.elcocinerocasero.com/imagen/receta/1000/2022-10-10-12-30-30/bizcocho-de-yogur.jpeg" width="300px" height="200px" alt="Bizcocho de la abuela">
 	</div>
 
 	<div>
@@ -82,5 +112,27 @@
 		</ol>
 		<img src="https://media.gettyimages.com/id/1249550551/es/foto/gazpacho-soup.jpg?s=612x612&w=0&k=20&c=-lLMskd-KrSR19izLTPX92cpExO4v8MCZZMsZL1PI-4=" width="200px" height="200px">
 	</div>
+	<div>
+		<h2 id="receta3"> Crema pastelera </h2>
+		<p>La crema pastelera es una de las cremas más empleadas en las recetas de postres del blog. Es una crema muy utilizada en la repostería a nivel general, necesaria para darle el toque especial a multitud de postres. En Recetas de Rechupete encontraréis infinidad de recetas con ella, y ya era hora de darle su merecido protagonismo. Ejemplos como tartas, milhojas de hojaldre, un brazo de gitano, las famosas cañas rellenas, los profiteroles italianos, etc. </p> 
+		<h4 class="ingredientes"> Ingredientes: </h4>
+		<ul> 
+			<li> 500ml de leche entera </li>
+			<li> 4 yemas de huevo </li>
+			<li> 125g azúcar blanco </li>
+			<li> 1 vaina de vainilla </li>
+			<li> Piel de limón </li>
+			<li> Mantequilla </li>
+		</ul>
+		<h4 class="prep"> Modo de preparación: </h4>
+		<ol> 
+			<li> Comenzamos por la vaina de vainilla. Le damos un corte a lo largo, la abrimos y retiramos con un cuchillo las semillas del interior. </li>
+			<li> Lavamos el limón y pelamos la piel finamente, sin que lleve parte blanca. En función de gustos, podéis usar mayor o menor cantidad de piel, ya que el sabor del limón a muchos os puede resultar cargante. </li>
+			<li> De la leche, separamos 150 ml. en una taza. Incluso si queréis que quede un poco más sabrosa. Le podéis añadir un toque de nata, con un chorrito es suficiente. El resto lo ponemos a calentar en un cazo, a fuego medio. Cuando esté a punto de hervir, pero que no llegue a hacerlo, retiramos del fuego. </li>
+			<li> Añadimos la vainilla, la piel del limón y dejamos infusionar unos 30 minutos, con el cazo tapado. Mientras infusiona la leche vamos a mezclar el almidón o harina de maíz. La disolvemos en la taza de leche, removiendo bien, para que no queden grumos. Reservamos.</li>
+		</ol>
+		<img src="https://www.recetasderechupete.com/wp-content/uploads/2020/05/Crema-pastelera-6.png" width="300px" height="200px">
+	</div>
+</div>
 </body>
 </html>
