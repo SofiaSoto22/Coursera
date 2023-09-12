@@ -35,17 +35,17 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li> <a href="#">
-						<i class="bi bi-book"></i><br class="hidden-xs">Menu</a> 
+						<li> <a href="menu-categories.html">
+							<i class="bi bi-book"></i><br class="d-none d-lg-block">Menu</a> 
 						</li>
 						<li><a href="#">
-							<i class="bi bi-info-circle-fill"></i><br class="hidden-xs">About</a>
+							<i class="bi bi-info-circle-fill"></i><br class="d-none d-lg-block">About</a>
 						</li>
 						<li><a href="#">
-							<i class="bi bi-award-fill"></i> <br class="hidden-xs"> Awards</a>
+							<i class="bi bi-award-fill"></i> <br class="d-none d-lg-block"> Awards</a>
 						</li>
-						<li id="phone" class="hidden-xs"><a href="tel:410-602-5008">
-							<span>410-602-5008</span></a><div>* We Deliver</div>
+						<li id="phone" class="text-center"><a href="tel:410-602-5008">
+							<span>410-602-5008</span></a><div class="text-center">* We Deliver</div>
 						</li>
 					</ul>
 				</div>
@@ -56,10 +56,50 @@
 
 	<div id="main-content" class="container">
 		<div class="jumbotron">
-			<img src="jumbotron_768.jpg" alt="picture of restaurant" class="img-responsive d-block d-sm-none">
+			<img src="jumbotron_768.jpg" alt="picture of restaurant" class="img-fluid d-sm-block d-xs-block d-lg-none d-md-none">
 		</div>
-	</div>
+		<div class="home-tiles row row-cols-3">
+			<div class="col-12 col-sm-6 col-md-4">
+				<a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+			</div>
+			<div class="col-12 col-sm-12 col-md-4">
+				<a href="https://goo.gl/maps/2cbJqfcz6k7tELvL8" target="_blank">
+					<div id="map-tile">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12338.70098200007!2d-76.7116881!3d39.3635903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2snl!4v1694435664041!5m2!1sen!2snl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<span>map</span></div></a>
+					</div>
+				</div>
+			</div><!--**End of home tiles**-->
+			<!---End of main content----> 
+			<footer class="panel-footer">
+				<div class="container">
+					<div class="row">
+						<section id="hours" class="col-sm-4">
+							<span>Hours:</span><br>
+							Sun-Thurs: 11:15am-10:00pm<br>
+							Fri: 11:15am-2:30pm<br>
+							Saturday closed
+							<hr class="d-block d-sm-none">
+						</section>
+						<section id="address" class="col-sm-4">
+							<span>Address:</span><br>
+							7105 Reisterstown Road<br>
+							Baltimore, MD 21215
+							<p>*Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p> <hr class="d-block d-sm-none">
+						</section>
+						<section id="testimonials" class="col-sm-4">
+							<p>The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!</p>
+							<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+						</section>	
+					</div>
+					<div class="text-center">&copy; Copyright Davidd Chu's China Bistro 2016 </div>
+				</div>
+			</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
-</html>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+		</body>
+		</html>
